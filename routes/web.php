@@ -27,6 +27,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/public', 'PublicController@index');
+Route::get('/public', 'Public\PublicController@index');
 Route::get('/home', 'HomeController@index');
 Route::get('/edit','Auth\RegisterController@update');
