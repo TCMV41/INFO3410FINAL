@@ -16,7 +16,7 @@ class PublicController extends Controller{
                 ->get();
 
       
-        return view('public.index',['all_users'=>$users ]);
+        return view('public/public.index',['all_users'=>$users ]);
     }
 
 }
