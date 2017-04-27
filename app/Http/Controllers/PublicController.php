@@ -13,6 +13,7 @@ class PublicController extends Controller{
         // $users= \App\User::all();
         $users= DB::table('users')
                 ->where('approved',1)
+                ->orderBy('dateGraduated', 'asc')
                 ->get();
 
       
