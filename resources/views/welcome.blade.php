@@ -29,9 +29,10 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                   UWI DCIT Alumni Tracker
+                <div id="title"class="title m-b-md">
+                   UW DCIT Alumni Tracker
                 </div>
+
 
                 <div class="links">
                     <a href="/public/public">Public Records</a>
