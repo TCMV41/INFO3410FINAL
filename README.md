@@ -7,4 +7,4 @@ Administrative credentials for testing:
 -password:password
 
 
-Update: As of 25th no more DB issues, or site issues Procfile also fixed, alumnitracker.herokuapp.com
+Update: As of 26th no more DB issues, or site issues Procfile also fixed, alumnitracker.herokuapp.com
