@@ -5,3 +5,6 @@
 Administrative credentials for testing:
 -email:admin@admin.com
 -password:password
+
+
+Update: As of 25th no more DB issues, or site issues Procfile also fixed, alumnitracker.herokuapp.com
