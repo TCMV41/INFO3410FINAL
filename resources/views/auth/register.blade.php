@@ -175,6 +175,7 @@
                                 @endif
                             </div>
                         </div>
+                        
 
                         <div class="form-group{{ $errors->has('interests') ? ' has-error' : '' }}">
                             <label for="interests" class="col-md-4 control-label">Interests</label>
@@ -190,17 +191,49 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                                 <label for="avatar" class="col-md-4 control-label">Avatar</label>
 
-                                @if(isset($dataTypeContent->avatar))
-                                    <img src="{{ Voyager::image( $dataTypeContent->avatar ) }}"
-                                         style="width:200px; height:auto; clear:both; display:block; padding:2px; border:1px solid #ddd; margin-bottom:10px;">
+                        <div class="form-group{{ $errors->has('facebook') ? ' has-error' : '' }}">
+                            <label for="facebook" class="col-md-4 control-label">Facebook Link(www.facebook.com/profile)</label>
+
+                            <div class="col-md-6">
+                                <input id="facebook" type="text" class="form-control" name="facebook" value="{{ old('facebook') }}" >
+
+                                @if ($errors->has('facebook'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('facebook') }}</strong>
+                                    </span>
                                 @endif
-                                <input type="file" name="avatar">
                             </div>
+                        </div>
 
-                     
+                        <div class="form-group{{ $errors->has('github') ? ' has-error' : '' }}">
+                            <label for="github" class="col-md-4 control-label">GitHub (www.github.com/profile)</label>
+
+                            <div class="col-md-6">
+                                <input id="github" type="text" class="form-control" name="github" value="{{ old('github') }}" >
+
+                                @if ($errors->has('github'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('github') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('linkedin') ? ' has-error' : '' }}">
+                            <label for="linkedin" class="col-md-4 control-label">Linked-In (www.linkedin.com/profile)</label>
+
+                            <div class="col-md-6">
+                                <input id="linkedin" type="text" class="form-control" name="linkedin" value="{{ old('linkedin') }}" >
+
+                                @if ($errors->has('linkedin'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('linkedin') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div> 
+                                         
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
@@ -208,10 +241,16 @@
                                 </button>
                             </div>
                         </div>
+
                     </form>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
 @endsection
