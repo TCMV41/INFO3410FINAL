@@ -26,10 +26,28 @@
                         <br><strong>Company: </strong>{{ $users->company}}
                         <br><strong>Interests: </strong>{{ $users->interests}}
                         <br><strong>Email: </strong>{{ $users->email}}
+                        <br><strong>Telephone: </strong>{{ $users->telephone}}
                         <br><strong>Country Employed: </strong>{{ $users->countryEmployed}}
                         <br><strong>Company: </strong>{{ $users->company}}
                         <br><strong>Company Email: </strong>{{ $users->companyEmail}}
                         <br><strong>Country: </strong>{{ $users->country}}
+                        <br><strong>Social Media Links: </strong>
+                            <a href="https://{{$users->facebook}}">
+                                <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" alt="Facebook" width="25" height="25" border="0">
+                            </a>
+
+                            <a href="https://{{$users->github}}">
+                                <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="Github" width="25" height="25" border="0">
+                            </a>
+
+                            <a href="https://{{$users->linkedin}}">
+                                <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" alt="Linkedin" width="25" height="25" border="0">
+                            </a>
+
+
+                            <br><br></a>
+                                <img src="{{$users->image}}" alt="Avatar" width="100" height="100" border="0">
+                            </a>
                     </p>
                 </li>
                 @endforeach
