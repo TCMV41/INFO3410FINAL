@@ -80,6 +80,20 @@
                                 @endif
                             </div>
                         </div>
+                        
+                          <div class="form-group{{ $errors->has('telephone') ? ' has-error' : '' }}">
+                            <label for="telephone" class="col-md-4 control-label">Telephone</label>
+
+                            <div class="col-md-6">
+                                <input id="telephone" type="number" class="form-control" name="telephone" value="{{ old('telephone') }}"required>
+
+                                @if ($errors->has('telephone'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('telephone') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group{{ $errors->has('degree') ? ' has-error' : '' }}">
                             <label for="degree" class="col-md-4 control-label">Degree Acquired</label>
@@ -229,6 +243,20 @@
                                 @if ($errors->has('linkedin'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('linkedin') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div> 
+                        
+                        <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
+                            <label for="image" class="col-md-4 control-label">Avatar (Public Image Link)</label>
+
+                            <div class="col-md-6">
+                                <input id="image" type="text" class="form-control" name="image" value="{{ old('image') }}" >
+
+                                @if ($errors->has('image'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('image') }}</strong>
                                     </span>
                                 @endif
                             </div>
